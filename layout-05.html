@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
 
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 300px;
+      width: 100%;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      margin-bottom: 1rem;
+      word-wrap: break-word;
+    }
+
+    .hero p {
+      font-size: clamp(0.95rem, 3vw, 1.1rem);
+      color: #555;
+    }
+
+    .features-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .feature {
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .feature p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 1.5rem 0.75rem;
+      }
+
+      .features-container {
+        padding: 1.5rem 0.75rem;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CHAMADA PRINCIPAL</h1>
+      <p>Descrição da chamada principal para atrair a atenção do cliente.</p>
+    </div>
+  </section>
+
+  <section class="features-container">
+    <div class="features">
+
+      <div class="feature">
+        <h3>FEATURE 1</h3>
+        <p>Descrição da feature com um pouco mais de texto para ocupar espaço.</p>
+      </div>
+
+      <div class="feature">
+        <h3>FEATURE 2</h3>
+        <p>Descrição da feature com um pouco mais de texto para ocupar espaço.</p>
+      </div>
+
+      <div class="feature">
+        <h3>FEATURE 3</h3>
+        <p>Descrição da feature com um pouco mais de texto para ocupar espaço.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

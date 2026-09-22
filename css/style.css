@@ -1,1 +1,123 @@
+/* =========================
+   VARIÁVEIS
+   ========================= */
+:root {
+    --cor-principal: #333;
+    --cor-texto: white;
+    --espacamento: 20px;
+    --cor-fundo-aside: #eee;
+    --cor-fundo-main: #f5f5f5;
+}
+/* =========================
+   CONFIGURAÇÕES
+   ========================= */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* =========================
+   LAYOUT 01
+   MENU
+   ========================= */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espacamento);
+    background-color: var(--cor-principal);
+}
+.menu h1 {
+    margin: 0;
+}
+.menu nav {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+/* =========================
+   LAYOUT 01
+   CONTEÚDO
+   ========================= */
+.conteudo {
+    padding: 40px;
+    text-align: center;
+    min-height: 400px;
+}
+.conteudo h2 {
+    margin-bottom: 10px;
+}
+/* =========================
+   LAYOUT 01
+   RODAPÉ
+   ========================= */
+.rodape {
+    padding: var(--espacamento);
+    text-align: center;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+}
+/* =========================
+   LAYOUT 04
+   DUAS COLUNAS
+   ========================= */
+.layout-duas-colunas {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: var(--espacamento);
+    padding: var(--espacamento);
+}
+.layout-duas-colunas aside {
+    padding: var(--espacamento);
+    background-color: var(--cor-fundo-aside);
+}
+.layout-duas-colunas main {
+    padding: var(--espacamento);
+    background-color: var(--cor-fundo-main);
+}
+/* =========================
+   LAYOUT 01
+   RESPONSIVIDADE DO CELULAR
+   ========================= */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu nav {
+        gap: 10px;
+    }
+    .conteudo {
+        padding: 20px;
+    }
+}
+/* =========================
+   LAYOUT 01
+   RESPONSIVIDADE DO TABLET
+   ========================= */
+@media (min-width: 601px) and (max-width: 900px) {
+    .menu {
+        padding: 15px;
+    }
+    .menu nav {
+        gap: 15px;
+    }
+    .conteudo {
+        padding: 30px;
+    }
+}
+/* =========================
+   LAYOUT 04
+   RESPONSIVIDADE - CELULAR
+   ========================= */
 
+@media (max-width: 600px) {
+    .layout-duas-colunas {
+        grid-template-columns: 1fr;
+    }
+}

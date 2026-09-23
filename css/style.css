@@ -149,7 +149,6 @@ body {
     display: flex;
     gap: 200px;
    }
-
    .card{
     font-family: Arial, sans-serif;
     color: var(--cor-texto-card);
@@ -160,19 +159,14 @@ body {
     border: solid 1px #1A1A24;
     box-shadow: 0px 4px 10px #1F2833
    }
-
    .card img{
     width: 200px;
     height: 600px;
     object-fit: cover;
    }
-
-
-   
    .card-conteudo{
     padding: 10px;
    }
-
    .card-button{
     display: inline-block;
     padding: 10px 20px;
@@ -182,10 +176,6 @@ body {
     border-radius: 5px;
     margin-top: 10px;
    }
-
-
-
-
    /*=========================
     LAYOUT 06 - TABELA DE PREÇOS
     ========================= */

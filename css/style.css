@@ -27,6 +27,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
 }
 /* =========================
    LAYOUT 01
@@ -143,10 +145,6 @@ body {
         align-items: center;
     }
    }
-   body {
-    background-color: #0B0C10;
-   }
-
    .cards{
     display: flex;
     gap: 200px;
@@ -165,7 +163,7 @@ body {
 
    .card img{
     width: 200px;
-    heigth: 600px;
+    height: 600px;
     object-fit: cover;
    }
 
@@ -198,11 +196,6 @@ body {
             align-items: center;
         }
     }
-
-    body {
-        background-color: #333;
-    }
-
     .tabela{
         display: flex;
         gap: 200px;
@@ -228,13 +221,3 @@ body {
         padding: 10px;
         color: var(--cor-texto-tabela);
     }
-
-
-
-
-
-
-
-
-
-
